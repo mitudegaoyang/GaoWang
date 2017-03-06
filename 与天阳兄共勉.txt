@@ -1,0 +1,15 @@
+用户名:wzw      密码:wzw2016
+用户名:zwj      密码:zwj2016
+
+
+命名方式
+功能-- 详细描述 --位置
+例如 .tool-autoInvest-btn  自动投标按钮 
+       .calc-earnings-main  收益计算器容器 
+       function accreditInvest()  投资授权 方法
+       aboutus-safeMoney.jsp  关于我们页面中的子页面  资金保障
+
+我自认为避免全局污染的最好 一个作用域的控制 另一个就是规范的命名 便于后期维护
+尽量避免在标签中直接写style=""；
+优先加载css 底部加载js 可以使的页面加载效率更高 用户体验好 
+尽量不要给class 绑定事件 这样在维护的过程会十分痛苦 

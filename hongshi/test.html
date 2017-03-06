@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css" />
+		<style>
+			.login-box{
+				width: 450px;
+				height: 300px;
+				background: #fff;
+				margin-top: 100px;
+				border: 1px solid #ddd;
+				padding: 20px 10px ;
+				box-shadow: 2px 2px 30px #000000;
+			}
+			.viewbtn,.okbtn{
+				position: absolute;
+				top: 10px;
+				right:20px;
+				cursor: pointer;
+			}
+			.okbtn{display: none;}
+			.err{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<!--注册登录-->
+				<div class='login-box'>
+					<form class="form-horizontal">
+						<div class="form-group">
+						    <label for="inputEmail3" class="col-lg-2 control-label">用户名</label>
+						    <div class="col-lg-10">
+						      	<input type="text" class="form-control" id="inputEmail3" placeholder="用户名" required minlength="6" maxlength="12"  onKeyUp="value=value.replace(/[^a-zA-Z0-9]/g,'')">
+						      	<span class="glyphicon glyphicon-ok okbtn"></span>
+						    </div>
+						</div>
+						<div class="form-group">
+						    <label for="inputPassword3" class="col-lg-2 control-label">密码</label>
+						    <div class="col-lg-10">
+						      	<input type="password" class="form-control" id="inputPassword3" placeholder="密码"  required minlength="6" maxlength="12" onKeyUp="value=value.replace(/[^a-zA-Z0-9]/g,'')">
+						      	<span class="glyphicon glyphicon-eye-open viewbtn"></span>
+						      	<span class="err "></span>
+						    </div>
+						  </div>
+						<div class="form-group">
+						    <div class="col-lg-offset-2 col-lg-10">
+						    </div>
+						  </div>
+						<div class="form-group">
+						    <div class="col-lg-offset-2 col-lg-10">
+						      	<a class="btn btn-success" id="log" >登录</a>
+						      	<a class='btn btn-warning' id='reg' > 注册</a>
+						    </div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script src="bootstrap-3.3.5-dist/js/jquery-3.1.0.min.js"></script>
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.js" ></script>
+		<script>
+			function login(){
+				//获取信息
+				var account=$('#inputEmail3').val();
+				var upassword=$('#inputPassword3').val();
+				if($('#inputPassword3').val().length<6){
+					$('.err').html('必须是6-12位字符'); return false;
+				}else{
+					$('.err').html('');
+				}
+				if(inputEmail3.validity.valid&&inputPassword3.validity.valid){
+					$('.err').html('');
+					$.post('http://120.76.220.142/login',{account:account,password:upassword},function(data){
+						if(data.status){
+							alert('登录成功')
+						}else{
+							alert(data.msg);
+						}
+					})
+				}else{
+					$('.err').html('请检查用户名和密码');
+				}
+			}
+			function checkAccount(){
+				var account=$('#inputEmail3').val();
+
+				$.post('http://120.76.220.142/is_exist',{account:account},function(data){
+					if(data.status){
+						//ok
+						$('.okbtn').css('display','block');
+						$('.err').html('');
+					}else{
+						
+						$('.okbtn').css('display','none');
+						$('.err').html('用户名已存在');
+					}
+				})
+				
+			}
+			function reg(){
+				var account=$('#inputEmail3').val();
+				var upassword=$('#inputPassword3').val();
+				if($('#inputPassword3').val().length<6){
+					$('.err').html('必须是6-12位字符'); return false;
+				}else{
+					$('.err').html('');
+				}				
+				if(inputEmail3.validity.valid&&inputPassword3.validity.valid){
+					$('.err').html('');
+					$.post('http://120.76.220.142/register',{account:account,password:upassword},function(data){
+						if(data.status){
+							//ok
+							alert('注册成功');
+						}else{
+							alert(data.msg);
+						}
+					})
+				}else{
+					$('.err').html('请检查用户名和密码');
+				}
+			}
+			function morethan6(){
+				if($('#inputPassword3').val().length<6){$('.err').html('必须是6-12位字符'); return false;}else{
+					$('.err').html(''); return true;
+				}
+			}
+			$('.viewbtn').click(function(){
+				if($('#inputPassword3').attr('type')=='text'){
+					$('#inputPassword3').attr('type','password')
+				}else{
+					$('#inputPassword3').attr('type','text')
+				}
+				
+			})
+			$('#log').click(login);
+			$('#reg').click(reg);
+			$('#inputEmail3').blur(checkAccount);
+		</script>
+	</body>
+</html>

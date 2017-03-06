@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>计算器</title>
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="css/easydropdown.css" />
+		<link rel="stylesheet" href="css/clac.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<table>
+					<thead>
+						<tr>
+							<th>单项</th>
+							<th>材质</th>
+							<th>单价</th>
+							<th>单位</th>
+							<th>数量</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>地面部分</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="a1|平米|10.00">普通展毯</option>
+									<option value="a2|平米|15.00">拉绒地毯</option>
+									<option value="a3|平米|25.00">圈绒地毯</option>
+									<option value="a4|平米|35.00">复合木地板</option>
+									<option value="a5|平米|70.00">普通展毯地台</option>
+									<option value="a6|平米|80.00">拉绒地毯地台</option>
+									<option value="a7|平米|85.00">圈绒地毯地台</option>
+									<option value="a8|平米|100.00">复合木地板地台</option>
+									<option value="a9|平米|180.00">钢化玻璃地台</option>
+									<option value="a10|平米|200.00">方块烤漆地板地台</option>
+							   		<option value="a11|平米|60.00">舞美台板</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>背墙结构</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="b1|平米|70.00">桁架宝丽布喷绘（单面）</option>
+									<option value="b2|平米|100.00">桁架宝丽布喷绘（双面）</option>
+									<option value="b3|平米|150.00">钢木结构、写真喷绘（单面）</option>
+									<option value="b4|平米|220.00">钢木结构、写真喷绘（双面）</option>
+									<option value="b5|平米|130.00">钢木结构、家饰宝喷绘（单面）</option>
+									<option value="b6|平米|170.00">钢木结构、家饰宝喷绘（双面）</option>
+									<option value="b7|平米|140.00">钢木结构、乳胶漆饰面（单面）</option>
+									<option value="b8|平米|260.00">钢木结构、乳胶漆饰面（双面）</option>
+									<option value="b9|平米|160.00">钢木结构、防火板饰面（单面）</option>
+									<option value="b10|平米|280.00">钢木结构、防火板饰面（双面）</option>
+							   		<option value="b11|平米|360.00">钢木结构、烤漆饰面</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>二层结构</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="c1|平米|850.00">钢木结构</option>
+									<option value="c2|延米|180.00">护栏</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>灯箱结构</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="d1|平米|150.00">普通灯箱（木结构）</option>
+									<option value="d2|平米|200.00">异形灯箱（木结构）</option>
+									<option value="d3|平米|350.00">超薄灯箱（铝合金）</option>
+									<option value="d4|平米|380.00">异形灯箱（铝合金）</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>	
+						<tr>
+							<td>咨询台/展示台</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="e1|延米|750.00">木结构、家饰宝饰面</option>
+									<option value="e2|延米|850.00">木结构、乳胶漆饰面</option>
+									<option value="e3|延米|900.00">木结构、防火板饰面</option>
+									<option value="e4|延米|1500.00">木结构、烤漆饰面</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>标识/文字</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="f1|公分|2.50">水晶字</option>
+									<option value="f2|公分|2.00">即时贴字</option>
+									<option value="f3|公分|10.00">树脂发光字</option>
+									<option value="f4|公分|15.00">迷你发光字</option>
+									<option value="f5|个|20.00">PVC字</option>
+									<option value="f6|个|21.00">雪佛板字</option>
+									<option value="f7|个|45.00">KT板字</option>
+									<option value="f8|个|80.00">泡沫字</option>
+									<option value="f9|平米|400.00">亚克力发光字</option>
+									<option value="f10|平米|400.00">喷塑铁字</option>
+									<option value="f11|平米|400.00">不锈钢字</option>
+									<option value="f12|平米|400.00">钛金字</option>
+									<option value="f13|平米|550.00">亚克力吸塑字</option>
+									<option value="f14|平米|550.00">钛金字发光字</option>
+									<option value="f15|平米|550.00">不锈钢发光字</option>
+									<option value="f16|平米|600.00">外漏灯宇</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>广告画面</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="g1|米|15.00">条幅</option>
+									<option value="g2|平米|15.00">宝丽布喷绘</option>
+									<option value="g3|平米|18.00">写真布喷绘</option>
+									<option value="g4|平米|20.00">背胶喷绘</option>
+									<option value="g5|平米|35.00">户外车贴</option>
+									<option value="g6|平米|35.00">网格布喷绘</option>
+									<option value="g7|平米|40.00">灯箱片喷绘</option>
+									<option value="g8|平米|60.00">软膜喷绘</option>
+									<option value="g9|平米|45.00">KT展板</option>
+									<option value="g10|套|45.00">易拉宝</option>
+									<option value="g11|套|45.00">X展架</option>
+									<option value="g12|平米|75.00">热转印</option>
+									<option value="g13|平米|100.00">UV喷绘</option>
+									<option value="g14|个|120.00">A型海报展板</option>
+									<option value="g15|个|120.00">POP支架广告牌</option>
+									<option value="g16|套|800.00">拉网展架</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>电料租赁</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="h1|个|15.00">插座</option>
+									<option value="h2|米|50.00">电缆线</option>
+									<option value="h3|个|50.00">电缆保护槽</option>
+									<option value="h4|个|200.00">电箱</option>
+									<option value="h5|卷|300.00">国标电线</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>展架租赁</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="i1|米|30.00">普通桁架</option>
+									<option value="i2|米|50.00">TRUSS架</option>
+									<option value="i3|根|25.00">雷亚架</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="平米"/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>展架租赁</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="j1|支|10.00">日光灯</option>
+									<option value="j2|支|20.00">长臂射灯</option>
+									<option value="j3|支|20.00">LED筒灯</option>
+									<option value="j4|支|25.00">轨道射灯</option>
+									<option value="j5|支|50.00">金卤灯</option>
+									<option value="j6|支|50.00">PAR灯</option>
+									<option value="j7|支|50.00">LED渲染灯</option>
+									<option value="j8|支|50.00">聚光灯</option>
+									<option value="j9|支|50.00">天地排</option>
+									<option value="j10|支|50.00">回光灯</option>
+									<option value="j11|支|100.00">成像灯</option>
+									<option value="j12|支|100.00">频闪灯</option>
+									<option value="j13|支|100.00">观众灯</option>
+									<option value="j14|支|300.00">LED摇头灯</option>
+									<option value="j15|支|300.00">电脑灯</option>
+									<option value="j16|支|300.00">光速灯</option>
+									<option value="j17|支|500.00">追光灯</option>
+									<option value="j18|支|500.00">调光台</option>
+									<option value="j19|支|300.00">硅箱</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>视频设备租赁</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="k1|台|300.00">等离子42寸</option>
+									<option value="k2|台|500.00">等离子50寸</option>
+									<option value="k3|平米|600.00">LED屏P2</option>
+									<option value="k4|平米|300.00">LED屏P3</option>
+									<option value="k5|平米|600.00">LED屏P6</option>
+									<option value="k6|平米|600.00">LED屏地屏</option>
+									<option value="k7|台|500.00">控制台</option>
+									<option value="k8|台|500.00">处理器</option>
+									<option value="k9|块|700.00">拼接屏46寸</option>
+									<option value="k10|块|1000.00">拼接屏60寸</option>
+									<option value="k11|台|800.00">触摸屏42寸</option>
+									<option value="k12|台|1000.00">触摸屏55寸</option>
+									<option value="k13|台|2000.00">触摸屏60寸</option>
+									<option value="k14|台|3000.00">触摸屏70寸</option>
+									<option value="k15|台|4000.00">触摸屏80寸</option>
+									<option value="k16|台|1500.00">触摸屏一体机42寸</option>
+									<option value="k17|台|2000.00">触摸屏一体机55寸</option>
+									<option value="k18|台|2500.00">触摸屏一体机60寸</option>
+									<option value="k19|台|4500.00">触摸屏一体机70寸</option>
+									<option value="k20|台|600.00">投影机 7500流明</option>
+									<option value="k21|台|1200.00">投影机 15000流明</option>
+									<option value="k22|块|300.00">折叠投影幕布120寸</option>
+									<option value="k23|块|300.00">折叠投影幕布150寸</option>
+									<option value="k24|块|300.00">折叠投影幕布200寸</option>
+									<option value="k25|块|1000.00">折叠投影幕布250寸</option>
+									<option value="k26|台|300.00">高清摄像机</option>
+									<option value="k27|台|2000.00">8米摇臂（配摇臂师）</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>
+						<tr>
+							<td>音箱设备租赁</td>
+							<td>
+								<select name="" class="dropdown">
+									<option value="k1|台|300.00">全频音箱</option>
+									<option value="k2|台|500.00">超低音箱</option>
+									<option value="k3|平米|600.00">反送音箱</option>
+									<option value="k4|平米|300.00">LED屏P3</option>
+									<option value="k5|平米|600.00">LED屏P6</option>
+									<option value="k6|平米|600.00">LED屏地屏</option>
+									<option value="k7|台|500.00">控制台</option>
+									<option value="k8|台|500.00">处理器</option>
+									<option value="k9|块|700.00">拼接屏46寸</option>
+									<option value="k10|块|1000.00">拼接屏60寸</option>
+									<option value="k11|台|800.00">触摸屏42寸</option>
+									<option value="k12|台|1000.00">触摸屏55寸</option>
+									<option value="k13|台|2000.00">触摸屏60寸</option>
+									<option value="k14|台|3000.00">触摸屏70寸</option>
+									<option value="k15|台|4000.00">触摸屏80寸</option>
+									<option value="k16|台|1500.00">触摸屏一体机42寸</option>
+									<option value="k17|台|2000.00">触摸屏一体机55寸</option>
+									<option value="k18|台|2500.00">触摸屏一体机60寸</option>
+									<option value="k19|台|4500.00">触摸屏一体机70寸</option>
+									<option value="k20|台|600.00">投影机 7500流明</option>
+									<option value="k21|台|1200.00">投影机 15000流明</option>
+									<option value="k22|块|300.00">折叠投影幕布120寸</option>
+									<option value="k23|块|300.00">折叠投影幕布150寸</option>
+									<option value="k24|块|300.00">折叠投影幕布200寸</option>
+									<option value="k25|块|1000.00">折叠投影幕布250寸</option>
+									<option value="k26|台|300.00">高清摄像机</option>
+									<option value="k27|台|2000.00">8米摇臂（配摇臂师）</option>
+								</select>
+							</td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value=""/></td>
+							<td><input type="text" value="0"/></td>
+						</tr>						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+	<script src="bootstrap-3.3.5-dist/js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.easydropdown.min.js"></script>
+</html>

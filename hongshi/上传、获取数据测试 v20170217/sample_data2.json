@@ -1,0 +1,35 @@
+[
+  {
+    "beginDate": 1448928000000,
+    "bizData": "{\"bizHistoryLoanCount\":3,\"bizHistoryFirstLoanDate\":1335801600000,\"bizHistoryLoanTotalAmount\":320000,\"bizOverdueTransactionCount\":1,\"bizOverdueCount\":4,\"bizOverdueMaxAmount\":10000,\"bizOverdueThirtyDaysCount\":2,\"bizOverdueNinetyDaysCount\":1,\"bizOverdueOneEightyDaysCount\":1,\"bizOverdueLastDate\":1438358400000,\"bizCurrentLoanCount\":2,\"bizLastSixMonthsAveragePaybackAmount\":8000,\"currentLoan\":[{\"purpose\":\"装修\",\"beginDate\":1438358400000,\"endDate\":1469980800000,\"totalAmount\":200000,\"balance\":100000},{\"purpose\":\"购车\",\"beginDate\":1448899200000,\"endDate\":1480521600000,\"totalAmount\":100000,\"balance\":50000}]}",
+    "dataType": 1000,
+    "endDate": 1480550400000,
+    "indexDigest": "e011fd074809ae4701b99254266f69bc40c091ea052ae61880564fda650321ff",
+    "indexType": 1000,
+    "isIndexed": 0,
+    "price": 20,
+    "status": 0
+  },
+  {
+    "beginDate": 1448928000000,
+    "bizData": "{\"bizHistoryLoanCount\":3,\"bizHistoryFirstLoanDate\":1335801600000,\"bizHistoryLoanTotalAmount\":320000,\"bizOverdueTransactionCount\":1,\"bizOverdueCount\":4,\"bizOverdueMaxAmount\":10000,\"bizOverdueThirtyDaysCount\":2,\"bizOverdueNinetyDaysCount\":1,\"bizOverdueOneEightyDaysCount\":1,\"bizOverdueLastDate\":1438358400000,\"bizCurrentLoanCount\":2,\"bizLastSixMonthsAveragePaybackAmount\":8000,\"currentLoan\":[{\"purpose\":\"装修\",\"beginDate\":1438358400000,\"endDate\":1469980800000,\"totalAmount\":200000,\"balance\":100000},{\"purpose\":\"购车\",\"beginDate\":1448899200000,\"endDate\":1480521600000,\"totalAmount\":100000,\"balance\":50000}]}",
+    "dataType": 1001,
+    "endDate": 1480550400000,
+    "indexDigest": "d1ebd3fc7f0f6f84d838e0fb73fd2262fc07126750a129cd7a1faa05d9a00000",
+    "indexType": 1001,
+    "isIndexed": 0,
+    "price": 5000,
+    "status": 0
+  },
+  {
+    "beginDate": 1448928000000,
+    "bizData": "{\"initialInvestmentTime\":1438358400000,\"lastSixMonthsInvestmentAmount\":5000,\"totalInvestmentAmount\":100000}",
+    "dataType": 1002,
+    "endDate": 1480550400000,
+    "indexDigest": "1c126681512bf17952abab084a2a79c01afe193da960240f8a0f8361727e0000",
+    "indexType": 1000,
+    "isIndexed": 0,
+    "price": 0,
+    "status": 0
+  }
+]

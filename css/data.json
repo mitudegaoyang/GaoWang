@@ -1,0 +1,16 @@
+{
+	"content1":[
+		{"id":9,"title":"首投再次来袭","time":"","state":"进行中","img":"img/st2.jpg","url":"http://www.yumaomoney.com/shoutouzailai.html"},
+		{"id":8,"title":"新年里，遇见你","time":"2016.12.22-2017.1.15","state":"进行中","img":"img/aoyun.jpg","url":"http://www.yumaomoney.com/luckyDrawInit.do"}	,
+		{"id":7,"title":"这几天送手机呢","time":"2016.9.23—2016.9.30","state":"已结束","img":"img/phone.png","url":"http://www.yumaomoney.com/shiyihuodong.html"},
+		{"id":6,"title":"中秋来燃灯","time":"2016.9.15-2016.9.26","state":"已结束","img":"img/zhongqiu.png","url":"http://www.yumaomoney.com/zhongqiuhuodong.html"},
+		
+		
+		{"id":5,"title":"欢度国庆","time":"2016.10.1—2016.10.7","state":"已结束","img":"img/gq.png","url":"http://www.yumaomoney.com/luckyDraw2016Shiyi.do"},
+		{"id":1,"title":"注册即送555元","time":"","state":"进行中","img":"img/shoutou.jpg","url":"http://www.yumaomoney.com/555hongbao.html"},
+		{"id":4,"title":"首投有特权","time":"2016.8.18-2016.10.18","state":"已结束","img":"img/st1.jpg","url":"http://www.yumaomoney.com/shoutou.html"},
+		{"id":3,"title":"致敬军人","time":"2016.8.1-2016.8.3","state":"已结束","img":"img/bayi.jpg","url":"http://www.yumaomoney.com/frontNewsDetails.do?id=61"},
+		{"id":2,"title":"议言不合还有礼","time":"2016.7.4-2016.7.18","state":"已结束","img":"img/yybh.jpg","url":"http://www.yumaomoney.com/yiyanbuhe.html"}	
+	]
+}
+

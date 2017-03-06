@@ -1,0 +1,124 @@
+
+/*************头部内容******************/
+.container {
+	min-width: 1200px !important;
+	margin:0 auto;
+}
+/**************主体内容*****************/
+section{
+	background: #eff3f5;
+	border-bottom:1px #dbdbdb solid;
+	border-top:1px #dbdbdb solid;
+	padding-top: 15px;
+}
+.recommend-design{
+	height: 230px;
+}
+.recommend-design .designer{
+	float: left;
+	font-size: 22px;
+	color: #666;
+	font-weight: bold;
+}
+.recommend-design .topShow{
+	float: right;
+	font-size: 16px;
+	color: #1B6D85;
+	margin-top: 6px;
+}
+.recommend-design .designer-box{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-top: 20px;
+}
+.recommend-design .designer-box li{
+	float: left;
+	width: 24%;
+	height: 45px;
+	margin-bottom: 30px;
+}
+.recommend-design .designer-l{
+	width: 50px;
+	float: left;
+	
+}
+.recommend-design .designer-r{
+	float: left;
+	width: 140px;
+}
+.designer-r p{
+	padding: 0;
+	margin: 0;
+	margin-top: 4px;
+}
+.designer-r p:nth-child(2){
+	color: #666;
+	margin-top: 0;
+}
+
+/*************公共样式******************/
+.container {
+	min-width: 1200px !important;
+	
+	
+ }
+/*************头部内容******************/
+header .logo{
+	float: left;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+header a{
+	color: #34495e;
+}
+/************轮播样式*******************/
+  .lubo_box { list-style: none;}
+  nav .container-fluid{padding: 0;}
+  .lubo{ width: 100%; min-width:1000px;clear: both; position: relative; height:368px;}
+  .lubo_box{ position: relative; width: 100%; height:368px; }
+  .lubo_box li{ float: left;position: absolute; top: 0; left: 0; width: 100%; height:368px; opacity: 0;filter:alpha(opacity=0);}
+  .lubo_box li a{ display: block;width: 100%;  height: 100%;}
+
+  .lubo_box li img{ width: 100%; height: 368px;}
+
+  /*圆点*/
+  .cir_box{ overflow: hidden; position: absolute; z-index: 100;}
+  .cir_box li{ float: left; width: 30px; height: 5px; margin:0 5px; cursor: pointer; background: #fff; opacity: 0.8;filter:alpha(opacity=80);}
+  .cir_on{ background: #000 !important;}
+
+  /*按钮*/
+  .lubo_btn{ position: absolute; width: 100%; top: 140px;}
+  .left_btn, .right_btn{ width: 30px; height: 80px; background: #000;opacity: 0.8;filter:alpha(opacity=80); cursor: pointer; color: #fff; line-height: 80px; font-size: 30px; text-align: center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+  .left_btn{ float: left;}
+  .right_btn{ float: right;}
+
+/**************主体内容*****************/
+
+/******************资讯****************/
+.design-message-box{
+	border-top: 1px solid #ddd;
+}
+.message-l{
+	float: left;
+	width: 800px;
+	height: 1000px;
+}
+.message-l .title a{
+	font-size: 22px;
+	color: #5d6d7e;
+	font-weight: bold;
+	text-decoration: none;
+}
+.message-l .media-left .media-object{
+	width: 100px;
+}
+.message-r{
+	float: left;
+	width: 399px;
+	height: 1000px;
+	border-left: 1px solid #ddd;
+}
+/**************尾部内容*****************/

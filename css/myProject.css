@@ -1,0 +1,201 @@
+/*************公共样式******************/
+body{
+	font-size: 13px;
+}
+.container {
+	min-width: 1200px !important;
+	margin:0 auto;
+}
+div:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+div:before{
+	content:"";
+	display:table;
+}
+a:hover{
+	text-decoration: none;
+}
+.lf{
+	float: left;
+}
+.rf{
+	float: right;
+}
+/*************头部内容******************/
+header .logo{
+	float: left;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+header a{
+	color: #34495e;
+}
+/**************主体内容*****************/
+section{
+	background: #eff3f5;
+	border-bottom:1px #dbdbdb solid;
+	border-top:1px #dbdbdb solid;
+	padding-top: 15px;
+}
+/**************主体内容*****************/
+aside{
+	position: fixed;
+	right: 10%;
+	bottom: 100px;
+}
+/**************模型展示*****************/
+.demo-view h3{
+	padding-left: 20px;
+	border-left: 5px solid #3498DB;
+}
+.demo-view .mx_listimg{
+	float: left;
+	width: 282px;
+	margin-left: 10px;
+	padding:10px 0;
+	border: 1px solid transparent;
+	border-bottom: 1px solid #ddd;
+}
+.demo-view .mx_listimg:hover{
+	background: #efefef;
+	box-shadow: 0px 2px 20px #888;
+	cursor: pointer;
+	border: 1px solid #ddd;
+}
+.demo-view .mx_titlemsg{
+	position: relative;
+}
+.demo-view .mx_titlemsg .mx_softstyle{
+	position: absolute;
+	top: -20px;
+	right: 0;
+	color: #aaa;
+}
+.demo-view dl{
+	float: left;
+	width: 280px;
+	margin-bottom: 0;
+}
+.demo-view dd{
+	float: left;
+	display: inline-block;
+	margin:8px 10px 8px 5px;
+	padding-left: 20px;
+}
+.demo-view .mx_ico1{
+	background:url("../img/images/mx_eye.png") no-repeat 0 2px;
+}
+.demo-view .mx_ico2{
+	background:url("../img/images/mx_msg.png") no-repeat 0 2px;
+}
+.demo-view .mx_ico3{
+	background:url("../img/images/mx_save.png") no-repeat 0 -2px;
+}
+.demo-view .mx_imgshow{
+	background: #000;
+	width: 280px;
+	height: 200px;
+	line-height: 200px;
+	overflow: hidden;
+}
+.demo-view .mx_title{
+	margin-top: 5px;
+	width: 200px;
+	height: 20px;
+	overflow: hidden;
+}
+.demo-view .mx_member{
+	float: left;
+}
+.demo-view .mx_meb span{
+	line-height: 24px;
+	margin-left: 10px;
+	color: #aaa;
+}
+/**************推荐设计师*****************/
+.recommend-design{
+	height: 230px;
+}
+.recommend-design .designer{
+	float: left;
+	font-size: 22px;
+	color: #666;
+	font-weight: bold;
+}
+.recommend-design .topShow{
+	float: right;
+	font-size: 16px;
+	color: #1B6D85;
+	margin-top: 6px;
+}
+.recommend-design .designer-box{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	margin-top: 20px;
+}
+.recommend-design .designer-box li{
+	float: left;
+	width: 24%;
+	height: 45px;
+	margin-bottom: 30px;
+}
+.recommend-design .designer-l{
+	width: 50px;
+	float: left;
+	
+}
+.recommend-design .designer-r{
+	float: left;
+	width: 140px;
+}
+.designer-r p{
+	padding: 0;
+	margin: 0;
+	margin-top: 4px;
+}
+.designer-r p:nth-child(2){
+	color: #666;
+	margin-top: 0;
+}
+/**************尾部内容*****************/
+footer{
+	padding: 30px 0;
+}
+.mx_help{
+	margin: 0 auto;
+	padding:0;
+}
+.mx_help li{
+	float: left;
+	list-style-type: none;
+	margin: 5px 0px 5px 20px;
+}
+.mx_help li a{
+	color: #a697a1;
+}
+/************轮播样式*******************/
+  .lubo_box { list-style: none;}
+  nav .container-fluid{padding: 0;}
+  .lubo{ width: 100%; min-width:1000px;clear: both; position: relative; height:368px;}
+  .lubo_box{ position: relative; width: 100%; height:368px; }
+  .lubo_box li{ float: left;position: absolute; top: 0; left: 0; width: 100%; height:368px; opacity: 0;filter:alpha(opacity=0);}
+  .lubo_box li a{ display: block;width: 100%;  height: 100%;}
+
+  .lubo_box li img{ width: 100%; height: 368px;}
+
+  /*圆点*/
+  .cir_box{ overflow: hidden; position: absolute; z-index: 100;}
+  .cir_box li{ float: left; width: 30px; height: 5px; margin:0 5px; cursor: pointer; background: #fff; opacity: 0.8;filter:alpha(opacity=80);}
+  .cir_on{ background: #000 !important;}
+
+  /*按钮*/
+  .lubo_btn{ position: absolute; width: 100%; top: 140px;}
+  .left_btn, .right_btn{ width: 30px; height: 80px; background: #000;opacity: 0.8;filter:alpha(opacity=80); cursor: pointer; color: #fff; line-height: 80px; font-size: 30px; text-align: center;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+  .left_btn{ float: left;}
+  .right_btn{ float: right;}

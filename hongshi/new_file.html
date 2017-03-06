@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="shishi">提交</button>
+		<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+		<script>
+			$('#shishi').click(function(){
+				var  dataType=9000;
+				var  cert="MIIDDDCCAfSgAwIBAgIERW/+2TANBgkqhkiG9w0BAQsFADA/MRYwFAYDVQQDDA14Y3JlZGl0IGZyb250MRgwFgYDVQQKDA9PUkcgUExBQ0VIT0xERVIxCzAJBgNVBAYTAkNOMB4XDTE2MDIyODA0MTIxMloXDTM4MDEwMTA0MTIxMlowPzEWMBQGA1UEAwwNeGNyZWRpdCBmcm9udDEYMBYGA1UECgwPT1JHIFBMQUNFSE9MREVSMQswCQYDVQQGEwJDTjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJPc9MiDOEDxulU7UhPDO6UtO52LzujPXHRripq/X5/V1XD5chKme7mFbNFeOYJOXNRWS+liLveM/vIxcoy25n30kPJRKwzRNt2gV3v7c52C1cBTLMl95+2hkmtP9zfv0x1uGK+RNuOVf9sKoGf/HRiO16sIzlKzeG+trdocXKI8WYfYHumAMD4ZQdETQTimXcySZJ27OVSAuTRTnSgQ5qyTfX5NhXjJQ77jGwEfpUPkCRG9W4xa+qBbuoqN5YfQUXutRTYvcKdfPWb77iq5Op3BSetlMruUUdd5QrmyBw+HB2zEexFBf4MyW8jKPiX7q/hUcInRAoDqBLndhUofwuECAwEAAaMQMA4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAW3R2BTzeOzR6KfRug+cA2LbeIVp+U1GsYB6RfOm8U7Oq8TFX2rcc2ZofJ8GWjXerhx34x9snuqgKp+cu1e8WlfYWpq2dl/zHP1xm3Z0LVYN/y+kPFIRvZP62LRBmpJwX6hyiCY3vx/zjj3nuqX0f41cdlw1ZKsemn6j/nz4f3XFNGMGxjiw7q8+oD8MNlRTkjx6lSbo4o95BkUUfB5i2cAK58cSzwAh4JuHoKv2FflEYukQAEGUlPh1F1iQKoQUqJ/kXrYlI55jBAPVcwYm1Ll9X6XgSxZ5npiYz+L3LAr9GLpdQxwJsNRWLQvpkX7fTj8M8Qki2DXTUvPj/U84QRA==";
+				var indexType=1000;
+				var indexDigest="e09d4a9f6d60678c1bc78d151b0fa863ad8866d1a728aa9f2c71cc3ec3541f79";
+				$.getJSON('http://101.201.253.132:8080/index/getData',{dataType:dataType,cert:cert,indexType:indexType,indexDigest:indexDigest},function(data){
+					console.log(data);
+				})
+			})
+		</script>
+	</body>
+</html>
